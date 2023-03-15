@@ -3,7 +3,6 @@ const addButton = document.querySelector(".btn-add")
 const ul = document.querySelector("ul")
 const empty = document.querySelector(".empty")
 const priority = document.querySelector("#priority")
-console.log("file: index.js:6 / priority:", priority)
 
 addButton.addEventListener('click', (e) =>{
   e.preventDefault()
