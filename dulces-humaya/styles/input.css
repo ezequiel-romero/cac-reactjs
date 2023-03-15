@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+  @apply text-white;
+}
+
+.hero {
+  background: url(./../images/hero-2.jpg) no-repeat top;
+  background-size: cover;
+}
