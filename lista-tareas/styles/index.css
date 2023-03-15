@@ -2,11 +2,12 @@
   box-sizing: border-box;
 }
 :root {
-  --blue: #023047;
+  --blue: #004567;
+  --thistle: #D4C5E2;
   --green: #2a9d8f;
   --yellow: #E9C46A;
   --orange: #F4A261;
-  --red: #E76F51;
+  --red: #e04d29;
 }
 
 body {
@@ -41,7 +42,8 @@ p {
 }
 
 .form-container {
-  background-color: var(--green);
+  background-color: rgb(226, 226, 226);
+  color: black;
   padding: 40px 60px;
   border-radius: 10px;
   text-align: center;
@@ -56,9 +58,9 @@ p {
 
 form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  border: #666 1px solid;
-  border-radius: 10px;
+  gap:10px;
 }
 
 input {
@@ -66,25 +68,49 @@ input {
   padding: 10px 20px;
   margin: 0;
   width: 100%;
-  display: inline-block;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  display: block;
+  border-radius: 10px;
+  color: #666;
+  font-size: 14px;
+  height: 40px;
+  border: solid 1px grey;
 }
 
-input:focus-visible, .btn-add:focus-visible {
+input:focus-visible, select:focus-visible, .btn-add:focus-visible {
   outline: var(--orange) solid 2px;
   outline-offset: -1px;
 }
 
+.select-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+select {
+  display: inline-block;
+  border-radius: 10px;
+  border: 0;
+  height: 40px;
+  font-size: 14px;
+  color: #666;
+  flex-grow: 1;
+  padding: 0 20px;
+  border: solid 1px grey;
+}
+
 .btn-add {
-  padding: 10px 20px;
+  height: 40px;
+  width: 40px;
   border:0;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   font-weight: bold;
   background-color: var(--orange);
   color: white;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn-add:hover {
   background-color: var(--red);
@@ -113,12 +139,23 @@ li {
 
 li p {
   padding: 10px;
-  border: solid 1px var(--green);
   border-right: none;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   width: 100%;
+  border: solid 3px var(--green);
+}
 
+li p.high {
+  border: solid 3px var(--red);
+}
+
+li p.medium {
+  border: solid 3px var(--orange);
+}
+
+li p.low {
+  border: solid 3px var(--yellow);
 }
 
 li button {

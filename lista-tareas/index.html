@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de tareas</title>
   <link rel="stylesheet" href="styles/index.css">
+  <script src="https://kit.fontawesome.com/e0873b9799.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <main>
@@ -13,7 +14,19 @@
       <h1>Lista de tareas</h1>
       <form>
         <input type="text" name="task" placeholder="Añadir tarea..">
-        <button class="btn-add" type="submit">+</button>
+        <div class="select-btn">
+          <select name="urgency" id="priority">
+            <option value="">--Seleccione prioridad--</option>
+            <option value="high">Alta</option>
+            <option value="medium">Media</option>
+            <option value="low">Baja</option>
+          </select>
+          <button class="btn-add" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+          </button>
+        </div>
       </form>
     </div>
     <div class="task-container">

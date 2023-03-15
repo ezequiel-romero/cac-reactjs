@@ -2,6 +2,8 @@ const input = document.querySelector("input")
 const addButton = document.querySelector(".btn-add")
 const ul = document.querySelector("ul")
 const empty = document.querySelector(".empty")
+const priority = document.querySelector("#priority")
+console.log("file: index.js:6 / priority:", priority)
 
 addButton.addEventListener('click', (e) =>{
   e.preventDefault()
@@ -12,11 +14,21 @@ addButton.addEventListener('click', (e) =>{
     const li = document.createElement('li')
     const p = document.createElement('p')
     p.textContent = taskName
+    
+    if(priority.value === 'high') {
+      p.classList.add('high')
+    } else if(priority.value === 'medium') {
+      p.classList.add('medium')
+    } else if(priority.value === 'low') {
+      p.classList.add('low')
+    }
+
     li.appendChild(p)
     li.appendChild(addDeleteButton())
     ul.appendChild(li)
 
     input.value = ''
+    priority.value = ''
     empty.style.display = 'none'
   }
 })
