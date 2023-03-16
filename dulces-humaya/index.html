@@ -28,7 +28,7 @@
             </div>
           </div>
           <!-- Menu Mobile -->
-          <button onclick="openMenu()" type="button" class="menu-button inline-flex md:hidden items-center justify-center rounded-md" aria-controls="mobile-menu" aria-expanded="false">
+          <button type="button" class="menu-button inline-flex md:hidden items-center justify-center rounded-md" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="p-2 h-10 w-10 stroke-humaya hover:stroke-humaya-darker hover:bg-humaya focus:outline-none focus:ring-2 focus:ring-inset focus:ring-humaya-darker" fill="none" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -61,22 +61,6 @@
   <footer>
 
   </footer>
-
-  <script>
-    const menuButton = document.querySelector('.menu-button')
-    const menuDropdown = document.querySelector('.menu-dropdown')
-    
-    function openMenu () {
-      if(menuDropdown.classList.contains('hidden')) {
-        menuDropdown.classList.remove('hidden')
-        menuButton.children[1].classList.add('hidden')
-        menuButton.children[2].classList.remove('hidden')
-      } else {
-        menuDropdown.classList.add('hidden')
-        menuButton.children[1].classList.remove('hidden')
-        menuButton.children[2].classList.add('hidden')
-      }
-    }
-  </script>
+  <script src="js/index.js"></script>
 </body>
 </html>
