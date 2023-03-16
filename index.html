@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
   <title>Ezequiel Romero</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="https://kit.fontawesome.com/e0873b9799.js" crossorigin="anonymous"></script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -14,11 +16,45 @@
   })(window,document,'script','dataLayer','GTM-P5RPBCH');</script>
   <!-- End Google Tag Manager --> 
 </head>
-<body>
+<body class="bg-white text-[#333] min-h-screen min-w-[380px] w-full relative">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5RPBCH"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <header class="w-full border-b-[1px] border-b-[#00d2bf]">
+    <nav class="flex items-center justify-between max-w-5xl px-4 mx-auto h-16">
+      <img class="drop-shadow-md h-12" src="./images/logo.png" alt="">
+      <div class="flex gap-5">
+        <h1 class="text-lg font-semibold">Ezequiel Romero</h1>
+        <a href="https://github.com/ezequiel-romero" target="_blank"><i class="fa-brands fa-github hover:text-[#00d2bf]"></i></a>
+        <a href="https://www.linkedin.com/in/cesar-ezequiel-romero/" target="_blank"><i class="fa-brands fa-linkedin hover:text-[#00d2bf]"></i></a>
+        <a href="mailto:eze.1003@gmail.com" target="_blank"><i class="fa-solid fa-envelope hover:text-[#00d2bf]"></i></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="max-w-5xl px-4 py-8 mx-auto text-center">
+      <h2 class="text-xl font-bold">Lista de proyectos</h2>
+      <p class="pb-8">Codo a codo 4.0 - ReactJS - Comisión #23304</p>
+      <ul class="projects grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5 place-content-center">
+        <li class="text-center p-4 border rounded-lg hover:border-[#00d2bf]">
+          <h3>Monorepo GitHub</h3>
+          <img class="mt-4 mx-auto rounded-lg" src="./images/monorepo.jpg" alt="" />
+          <a href="https://github.com/ezequiel-romero/cac-reactjs" target="_blank"><i class="fa-brands fa-github mt-4 hover:text-[#00d2bf]"></i></a>
+        </li>
+        <li class="text-center p-4 border rounded-lg hover:border-[#00d2bf]">
+          <h3>ID card web</h3>
+          <a href="/projects/id-card-web"><img class="mt-4 mx-auto rounded-lg" src="./images/id_card_web.jpg" alt="" /></a>
+          <a href="https://github.com/ezequiel-romero/cac-reactjs/projects/id-card-web/" target="_blank"><i class="fa-brands fa-github mt-4 hover:text-[#00d2bf]"></i></a>
+        </li>
+        <li class="text-center p-4 border rounded-lg hover:border-[#00d2bf]">
+          <h3>Lista de tareas</h3>
+          <a href="/projects/lista-tareas"><img class="mt-4 mx-auto rounded-lg" src="./images/lista-de-tareas.jpg" alt="" /></a>
+          <a href="https://github.com/ezequiel-romero/cac-reactjs/projects/lista-tareas/" target="_blank"><i class="fa-brands fa-github mt-4 hover:text-[#00d2bf]"></i></a>
+        </li>
+      </ul>
+    </section>
+  </main>
   
 </body>
 </html>
