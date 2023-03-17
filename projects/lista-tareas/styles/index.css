@@ -13,7 +13,6 @@
 body {
   padding: 0;
   margin: 0;
-  /* background-color: var(--blue); */
   color: #333;
   width: 100%;
   min-height: 100vh;
@@ -188,4 +187,15 @@ li button {
 
 .priorities-container>div.no-priority>h2 {
   background-color: var(--green);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 15px;
+}
+footer a {
+  color: purple;
 }
