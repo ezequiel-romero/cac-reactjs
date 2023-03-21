@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="styles/output.css">
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 </head>
-<body class="min-h-screen bg-white">
-  <header class="relative">
-    <nav class="fixed top-0 w-full bg-black bg-opacity-60">
+<body class="bg-white">
+  <header class="sticky top-0 z-10">
+    <nav class="w-full bg-black">
       <div class="mx-auto max-w-6xl px-4">
         <div class="flex h-16 md:h-24 items-center max-md:justify-between">
           <!-- Logo -->
@@ -21,28 +21,28 @@
           <!-- Menu Desktop -->
           <div class="hidden md:block mx-auto">
             <div class="flex space-x-4">
-              <a href="#" class="nav-link">¿Quiénes somos?</a>
-              <a href="#" class="nav-link">Productos</a>
-              <a href="#" class="nav-link">Recetas</a>
-              <a href="#" class="nav-link">Contactanos</a>
+              <a href="#" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">¿Quiénes somos?</a>
+              <a href="#" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Productos</a>
+              <a href="#" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Recetas</a>
+              <a href="#" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Contactanos</a>
             </div>
           </div>
           <!-- Menu Mobile -->
           <button type="button" class="menu-button inline-flex md:hidden items-center justify-center rounded-md" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
-            <svg class="p-2 h-10 w-10 stroke-humaya hover:stroke-humaya-darker hover:bg-humaya focus:outline-none focus:ring-2 focus:ring-inset focus:ring-humaya-darker" fill="none" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+            <svg class="p-2 h-10 w-10 rounded-md stroke-humaya hover:stroke-humaya-darker hover:bg-humaya focus:outline-none focus:ring-2 focus:ring-inset focus:ring-humaya-darker" fill="none" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
-            <svg class="hidden p-2 h-10 w-10 stroke-humaya hover:stroke-humaya-darker hover:bg-humaya focus:outline-none focus:ring-2 focus:ring-inset focus:ring-humaya-darker" fill="none" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
+            <svg class="hidden p-2 h-10 w-10 rounded-md stroke-humaya hover:stroke-humaya-darker hover:bg-humaya focus:outline-none focus:ring-2 focus:ring-inset focus:ring-humaya-darker" fill="none" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <div class="menu-dropdown absolute top-16 inset-x-0 bg-black bg-opacity-60 text-white pb-8 hidden">
+          <div class="menu-dropdown absolute top-16 inset-x-0 bg-black text-white pb-8 hidden">
             <div class="flex flex-col gap-2 text-center">
-              <a href="#" class="nav-link">¿Quiénes somos?</a>
-              <a href="#" class="nav-link">Productos</a>
-              <a href="#" class="nav-link">Recetas</a>
-              <a href="#" class="nav-link">Contactanos</a>
+              <a href="#" class="text-humaya py-2 border-y border-transparent hover:border-humaya">¿Quiénes somos?</a>
+              <a href="#" class="text-humaya py-2 border-y border-transparent hover:border-humaya">Productos</a>
+              <a href="#" class="text-humaya py-2 border-y border-transparent hover:border-humaya">Recetas</a>
+              <a href="#" class="text-humaya py-2 border-y border-transparent hover:border-humaya">Contactanos</a>
             </div>
           </div>
         </div>
@@ -50,11 +50,70 @@
     </nav>
   </header>
   <main>
+    <!-- Hero section -->
     <section class="hero">
-      <div class="flex flex-col gap-4 md:w-1/2 px-4 mx-auto pt-40 pb-28 min-h-32 text-center text-white">
+      <div class="hero-inside flex flex-col gap-4 md:w-1/2 px-8 mx-auto pt-40 pb-28 min-h-32 text-center text-white">
         <h1 class="uppercase text-4xl font-thin">Dulces del alma</h1>
         <p class="text-xl">Los productos HUMAYA son elaborados desde hace más de 50 años fiel a las tradiciones familiares y sabores caseros, acompañándote en los momentos más importantes de la vida.</p>
-        <button class="bg-black text-humaya border-2 border-humaya font-bold self-center py-4 px-10">Conocenos</button>
+        <button class="bg-black text-white hover:text-humaya border-2 border-humaya hover:border-humaya-dark rounded-lg font-bold self-center py-3 px-7">Conocenos</button>
+      </div>
+    </section>
+    <!-- Products section -->
+    <section class="productos">
+      <div class="w-full bg-stone-500 text-center py-5">
+        <h2 class="text-white font-bold text-2xl uppercase">Productos</h2>
+      </div>
+      <div class="flex flex-col-reverse md:flex-row bg-black">
+        <div class="md:w-1/2">
+          <img class="object-cover h-full w-full" src="./images/products/prod-1.png" alt="Dulce de leche tradicional">
+        </div>
+        <div class="md:w-1/2 text-white flex items-center">
+          <div class="flex flex-col gap-4 max-md:text-center max-md:mx-auto px-8 py-14 max-w-[500px]">
+            <h3 class="uppercase text-2xl font-thin text-humaya">DULCE DE LECHE TRADICIONAL</h3>
+            <p>Elaboración artesanal de principio a fin, con un sabor intenso, receta tradicional</p>
+            <p class="font-bold text-humaya">Presentación en frasco de vidrio de 580gr.</p>
+            <button class="bg-black text-white hover:text-humaya border-2 border-humaya hover:border-humaya-dark rounded-lg font-bold self-center py-1 px-4">+ info</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row bg-black">
+        <div class="md:w-1/2 text-white flex items-center justify-end">
+          <div class="flex flex-col gap-4 max-md:text-center max-md:mx-auto px-8 py-14 max-w-[500px]">
+            <h3 class="uppercase text-2xl font-thin text-humaya">DULCE DE LECHE SIN AZÚCAR</h3>
+            <p>Elaboración artesanal para cuidar tu silueta sin renunciar a nada, endulzado naturalmente con stevia.</p>
+            <p class="font-bold text-humaya">Presentación en frasco de vidrio de 580gr y 280gr.</p>
+            <button class="bg-black text-white hover:text-humaya border-2 border-humaya hover:border-humaya-dark rounded-lg font-bold self-center py-1 px-4">+ info</button>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <img class="object-cover h-full w-full" src="./images/products/prod-2.png" alt="Dulce de leche sin azúcar">
+        </div>
+      </div>
+      <div class="flex flex-col-reverse md:flex-row bg-black">
+        <div class="md:w-1/2">
+          <img class="object-cover h-full w-full" src="./images/products/prod-3.png" alt="Dulce choconutt">
+        </div>
+        <div class="md:w-1/2 text-white flex items-center">
+          <div class="flex flex-col gap-4 max-md:text-center max-md:mx-auto px-8 py-14 max-w-[500px]">
+            <h3 class="uppercase text-2xl font-thin text-humaya">DULCE choconutt</h3>
+            <p>Elaboración artesanal para el capricho dulce, combinación de dulce de leche, chocolate y pasta de avellanas. Una delicia única.</p>
+            <p class="font-bold text-humaya">Presentación en frasco de vidrio de 280gr.</p>
+            <button class="bg-black text-white hover:text-humaya border-2 border-humaya hover:border-humaya-dark rounded-lg font-bold self-center py-1 px-4">+ info</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row bg-maizena">
+        <div class="md:w-1/2 text-white flex items-center justify-end">
+          <div class="flex flex-col gap-4 max-md:text-center max-md:mx-auto px-8 py-14 max-w-[500px]">
+            <h3 class="uppercase text-2xl font-thin text-maizena-dark">DULCE DE LECHE SIN AZÚCAR</h3>
+            <p>Elaboración artesanal para cuidar tu silueta sin renunciar a nada, endulzado naturalmente con stevia.</p>
+            <p class="font-bold text-maizena-dark">Presentación en frasco de vidrio de 580gr y 280gr.</p>
+            <button class="bg-maizena text-maizena-dark hover:text-black border-2 border-maizena-dark hover:border-black rounded-lg font-bold self-center py-1 px-4">+ info</button>
+          </div>
+        </div>
+        <div class="md:w-1/2 p-10 flex justify-center items-center">
+          <img class="max-w-[300px]" src="./images/products/product-4.jpg" alt="Dulce de leche sin azúcar">
+        </div>
       </div>
     </section>
   </main>
