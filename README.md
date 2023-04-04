@@ -9,3 +9,6 @@ https://ezequiel-romero.github.io/cac-reactjs/projects/id-card-web
 
 Lista de tareas:
 https://ezequiel-romero.github.io/cac-reactjs/projects/lista-tareas
+
+Dulces Humaya:
+https://ezequiel-romero.github.io/cac-reactjs/projects/dulces-humaya/
