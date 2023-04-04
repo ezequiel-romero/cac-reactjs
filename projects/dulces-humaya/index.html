@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
   <title>Dulces Humaya</title>
   <link rel="stylesheet" href="styles/output.css">
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/e0873b9799.js" crossorigin="anonymous"></script>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -32,10 +33,10 @@
           <!-- Menu Desktop -->
           <div class="hidden md:block mx-auto">
             <div class="flex space-x-4">
-              <a href="#" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Productos</a>
-              <a href="#" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Recetas</a>
-              <a href="#" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Sobre nosotros</a>
-              <a href="#" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Contáctanos</a>
+              <a href="#productos" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Productos</a>
+              <a href="#recetas" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Recetas</a>
+              <a href="#sobre-nosotros" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Sobre nosotros</a>
+              <a href="#contacto" class="py-1 border-b-2 border-transparent hover:border-humaya text-humaya">Contáctanos</a>
             </div>
           </div>
           <!-- Menu Mobile -->
@@ -50,10 +51,10 @@
           </button>
           <div class="menu-dropdown absolute top-16 inset-x-0 bg-black text-white pb-8 hidden">
             <div class="flex flex-col gap-2 text-center">
-              <a href="#" class="text-humaya py-2 border-y border-transparent hover:border-humaya">Productos</a>
-              <a href="#" class="text-humaya py-2 border-y border-transparent hover:border-humaya">Recetas</a>
-              <a href="#" class="text-humaya py-2 border-y border-transparent hover:border-humaya">Sobre nosotros</a>
-              <a href="#" class="text-humaya py-2 border-y border-transparent hover:border-humaya">Contáctanos</a>
+              <a href="#productos" class="mobileMenuLink text-humaya py-2 border-y border-transparent hover:border-humaya">Productos</a>
+              <a href="#recetas" class="mobileMenuLink text-humaya py-2 border-y border-transparent hover:border-humaya">Recetas</a>
+              <a href="#sobre-nosotros" class="mobileMenuLink text-humaya py-2 border-y border-transparent hover:border-humaya">Sobre nosotros</a>
+              <a href="#contacto" class="mobileMenuLink text-humaya py-2 border-y border-transparent hover:border-humaya">Contáctanos</a>
             </div>
           </div>
         </div>
@@ -70,7 +71,7 @@
       </div>
     </section>
     <!-- Quality section -->
-    <section class="calidad">
+    <section id="calidad">
       <div class="w-full bg-[#322f2f] text-center py-10">
         <h2 class="text-white font-bold text-xl">La mejor calidad para vos</h2>
         <div class="flex flex-col sm:flex-row mx-auto max-w-6xl gap-16 justify-center items-center pt-10">
@@ -90,7 +91,7 @@
       </div>
     </section>
     <!-- Products section -->
-    <section class="productos">
+    <section id="productos">
       <div class="w-full bg-stone-500 text-center py-5">
         <h2 class="text-white font-bold text-2xl uppercase">Productos</h2>
       </div>
@@ -148,7 +149,7 @@
       </div>
     </section>
     <!-- Recipes Section -->
-    <section class="recetas">
+    <section id="recetas">
       <div class="w-full bg-[#322f2f] text-center py-10">
         <h2 class="text-white font-bold text-xl">Recetas</h2>
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center gap-10 pt-10 px-4">
@@ -180,7 +181,7 @@
       </div>
     </section>
     <!-- About us section -->
-    <section class="sobre-nosotros">
+    <section id="sobre-nosotros">
       <div class="w-full bg-[#322f2f] text-center pt-10">
         <h2 class="text-white font-bold text-xl">Sobre nosotros</h2>
         <div class="flex mt-10 bg-black">
@@ -196,7 +197,7 @@
       </div>
     </section>
     <!-- Contact Section -->
-    <section class="contacto">
+    <section id="contacto">
       <div class="w-full bg-[#322f2f] text-center py-10">
         <h2 class="text-white font-bold text-xl">Contáctanos</h2>
         <div class="flex mt-10  bg-white">
@@ -224,32 +225,47 @@
       <h2 class="text-white font-bold text-xl">Encontranos en:</h2>
     </div>
     <div class="w-full bg-black">
-      <div class="max-w-6xl flex px-4 py-6 mx-auto justify-between items-start">
+      <div class="max-w-6xl flex flex-col md:flex-row gap-5 md:gap-2 px-4 py-6 mx-auto justify-center md:justify-between items-center md:items-start text-white text-center md:text-start">
         <div><img src="./images/logo.png" alt="Humaya"></div>
         <div>
           <p class="text-[#bca177] uppercase font-thin">Menu</p>
           <ul>
-            <li class="text-white">Productos</li>
-            <li class="text-white">Recetas</li>
-            <li class="text-white">Sobre nosotros</li>
-            <li class="text-white">Contáctanos</li>
+            <li>Productos</li>
+            <li>Recetas</li>
+            <li>Sobre nosotros</li>
+            <li>Contáctanos</li>
           </ul>
         </div>
         <div>
           <p class="text-[#bca177] uppercase font-thin">Navegación</p>
           <ul>
-            <li class="text-white">Preguntas frecuentes</li>
-            <li class="text-white">Distribuidores</li>
-            <li class="text-white">Prensa</li>
-            <li class="text-white">Recetas exclusivas</li>
+            <li>Preguntas frecuentes</li>
+            <li>Distribuidores</li>
+            <li>Prensa</li>
+            <li>Recetas exclusivas</li>
           </ul>
         </div>
         <div>
           <p class="text-[#bca177] uppercase font-thin">Redes</p>
+          <ul class="flex flex-col gap-1 text-2xl">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-tiktok"></i></li>
+          </ul>
         </div>
         <div>
           <p class="text-[#bca177] uppercase font-thin">Ubicación</p>
+          <p class="pb-1">Montes de Oca 2356, CABA</p>
+          <img src="./images/location.jpg" class="max-md:mx-auto" alt="">
         </div>
+      </div>
+    </div>
+    <div class="bg-humaya py-4 text-black text-center w-full">
+      <div class="flex gap-5 items-center mx-auto justify-center">
+        <h1 class="text-lg font-semibold"><a href="/" target="_blank" class="hover:text-gray-500">Ezequiel Romero</a></h1>
+        <a href="https://github.com/ezequiel-romero" target="_blank" class="hover:text-gray-500"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/cesar-ezequiel-romero/" target="_blank" class="hover:text-gray-500"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:eze.1003@gmail.com" target="_blank" class="hover:text-gray-500"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </div>
   </footer>

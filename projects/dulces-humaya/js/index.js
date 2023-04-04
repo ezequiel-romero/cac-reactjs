@@ -1,10 +1,15 @@
 
 const menuButton = document.querySelector('.menu-button')
 const menuDropdown = document.querySelector('.menu-dropdown')
+const mobileMenuLink = document.querySelectorAll('.mobileMenuLink')
 
-menuButton.addEventListener('click', openMenu)
+menuButton.addEventListener('click', openCloseMenu)
 
-function openMenu () {
+for (let i = 0; i < mobileMenuLink.length; i++) {
+  mobileMenuLink[i].addEventListener('click', openCloseMenu)
+}
+
+function openCloseMenu () {
   if (menuDropdown.classList.contains('hidden')) {
     menuDropdown.classList.remove('hidden')
     menuButton.children[1].classList.add('hidden')
