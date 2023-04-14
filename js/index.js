@@ -24,6 +24,12 @@ const projectList = [
     src: './images/dulces-humaya.jpg',
     repo: 'https://github.com/ezequiel-romero/cac-reactjs/tree/main/projects/dulces-humaya',
     href: '/cac-reactjs/projects/dulces-humaya'
+  },
+  {
+    title: 'Editor de Memes',
+    src: './images/editor-memes.jpg',
+    repo: 'https://github.com/ezequiel-romero/cac-reactjs/tree/main/projects/editor-memes',
+    href: '/cac-reactjs/projects/editor-memes/build/'
   }
 ]
 
