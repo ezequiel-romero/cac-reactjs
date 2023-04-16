@@ -1,13 +1,13 @@
 import memesImg from "./Memes"
 
-export default function MemeImagen({memeImg, setMemeImg}) {
+export default function MemeImagen({setMemeImg}) {
 
   const handleImageChange = (imgId) => {
     setMemeImg(imgId)
   }
   return (
     <div>
-      <h3 className="mb-4">1. Seleccione la imagen que quiere usar</h3>
+      <h3 className="mb-4 text-left">1. Seleccione la imagen que quiere usar</h3>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(48px,1fr))] gap-2">
         {
           memesImg.map(meme => (
